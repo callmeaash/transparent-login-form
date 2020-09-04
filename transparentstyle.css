@@ -1,0 +1,75 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(https://cdn.wallpapersafari.com/21/47/wiT4jV.jpg);
+}
+.box{
+  position: absolute;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(0, 0, 0,.6);
+  padding: 70px;
+  box-sizing: border-box;
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  width: 400px;
+}
+h1{
+  margin: 0 0 30px;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+.box .inputbx{
+  position: relative;
+}
+.box .inputbx input{
+  width: 100%;
+  padding: 15px 0;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+
+  }
+.box .inputbx label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  font-family: sans-serif;
+  color: white;
+  pointer-events: none;
+  transition: .5s;
+  font-weight: bold;
+}
+.box .inputbx input:focus ~ label,
+.box .inputbx input:valid ~ label{
+  top: -25px;
+  left: 0;
+  color: #03a9f4;
+  font-size:15px;
+}
+.box button{
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: sans-serif;
+  background: transparent;
+  outline: none;
+  border: none;
+  background-color:#03a9f4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 7px;
+}
